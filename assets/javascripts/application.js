@@ -1,0 +1,1 @@
+(function(){window.MB={}}).call(this);
