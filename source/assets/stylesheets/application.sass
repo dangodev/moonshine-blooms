@@ -1,0 +1,130 @@
+// *************************************
+//
+//   Moonshine Blooms
+//   -> Mini-app
+//
+// *************************************
+
+// -------------------------------------
+//   Config
+// -------------------------------------
+
+// ----- Palette ----- //
+
+$grey: #455b69
+$white: white
+
+// ----- Type ----- //
+
+$b-fontFamily: brandon-grotesque, Avenir, "Century Gothic", sans-serif
+$b-fontFamily-heading: bookmania, serif
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+=retina($width)
+  @media only screen and (min-width: #{$width}) and (min-resolution: 1.5dppx)
+    @content
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+html,
+body
+  min-height: 100%
+
+html
+  background: #222
+
+body
+  color: $white
+  font: 200 20px/1.5 $b-fontFamily
+
+main
+  height: 100%
+
+a
+  color: $white
+  margin: 0 2em
+  font-size: 75%
+  text-decoration: none
+  text-transform: uppercase
+  letter-spacing: 0.25em
+
+p
+  margin-top: 0
+  margin-bottom: 1.25em
+
+h1
+  font-family: $b-fontFamily-heading
+  font-feature-settings: "dlig"
+  font-size: 100px
+  font-style: italic
+  left: 0
+  line-height: 0.75
+  position: absolute
+  top: 10%
+
+// -------------------------------------
+//   Structure
+// -------------------------------------
+
+.bg
+  background: image-url('bg-blooms.jpg') no-repeat 0 0
+  background-attachment: fixed
+  background-size: 140% auto
+  bottom: 0
+  height: 100%
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  z-index: -1
+
+.logo
+  left: 1em
+  position: fixed
+  top: 1em
+  width: 12em
+  img
+    display: block
+    max-width: 100%
+
+.wrap
+  columns: 2
+  font-weight: 200
+  margin-left: 20%
+  max-width: 34em
+  letter-spacing: 0.0625em
+  padding-bottom: 2em
+  padding-top: 30%
+  position: relative
+  vertical-align: top
+  z-index: 2
+  &::first-letter
+    font-family: $b-fontFamily-heading
+    font-size: 300%
+    line-height: 0
+
+  p:first-of-type
+    margin-top: 1em
+
+.social
+  padding-bottom: 8em
+  text-align: center
+
+// -------------------------------------
+//   Tools
+// -------------------------------------
+
+.salt
+  font-feature-settings: "salt" 1
+
+.salt9
+  font-feature-settings: "salt" 9
+
+.salt14
+  font-feature-settings: "salt" 14
